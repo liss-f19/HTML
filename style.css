@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Darlington";
+  src: url("darlington.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Constantia";
+  src: url("constan.ttf") format("truetype");
+}
+body {
+  background-color: #ffffff;
+  color: #5b5b5b;
+  font-family: "Constantia", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+form {
+  width: 100%;
+  max-width: 400px;
+  min-width: 200px;
+  padding: 20px;
+  border: 2px solid #5b5b5b;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffeeee;
+}
+.form-section {
+  margin: 20px 0;
+  padding: 8px;
+  text-align: left;
+  border: 2px solid #5b5b5b;
+  position: relative;
+}
+
+.form-section > label:first-child {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background: #ffeeee;
+  padding: 0 10px;
+  color: #5b5b5b;
+  margin-top: 0;
+}
+label {
+  display: block;
+  margin-top: 5px;
+}
+select,
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #5b5b5b;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+input[type="checkbox"] {
+  width: auto;
+}
+.submit-btn {
+  background-color: #ffeeee;
+  color: black;
+  padding: 10px 20px;
+  border: solid;
+  cursor: pointer;
+}
+h1 {
+  font-family: "Darlington", serif;
+  text-align: center;
+  color: #5b5b5b;
+}

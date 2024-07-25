@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Perfect Cake Order Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <h1>Perfect Cake</h1>
+      <div class="form-section">
+        <label for="flavour">Main flavour</label>
+        <select id="flavour">
+          <optgroup label="Classic">
+            <option value="vanilla">Vanilla</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="strawberry">Strawberry</option>
+          </optgroup>
+          <optgroup label="Fruity">
+            <option value="strawberry">Strawberry</option>
+            <option value="raspberry">Raspberry</option>
+            <option value="rose">Rose</option>
+          </optgroup>
+          <optgroup label="Savoury">
+            <option value="pumpkin">Pumpkin</option>
+            <option value="carrot">Carrot</option>
+            <option value="fennel" selected>Fennel</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="form-section">
+        <label>Allergens</label>
+        <label
+          ><input
+            type="checkbox"
+            name="allergens"
+            value="gluten-free"
+            checked
+          />
+          Gluten-free</label
+        >
+        <label
+          ><input type="checkbox" name="allergens" value="peanut-free" />
+          Peanut-free</label
+        >
+        <label
+          ><input type="checkbox" name="allergens" value="soy-free" />
+          Soy-free</label
+        >
+        <label
+          ><input type="checkbox" name="allergens" value="dairy-free" />
+          Dairy-free</label
+        >
+        <label
+          ><input type="checkbox" name="allergens" value="sugar-free" checked />
+          Sugar-free</label
+        >
+        <label
+          ><input type="checkbox" name="allergens" value="lupin-free" />
+          Lupin-free</label
+        >
+      </div>
+      <div class="form-section">
+        <label for="datetime">Preferred pick-up date</label>
+        <input type="datetime-local" id="datetime" value="2024-07-01T12:00" />
+      </div>
+      <div class="form-section">
+        <label for="photo">Cake inspiration photo</label>
+        <input type="file" id="photo" accept="image/*" />
+      </div>
+      <div class="form-section">
+        <label for="inscription">Cake inscription</label>
+        <input
+          type="text"
+          id="inscription"
+          placeholder="e.g. Happy Birthday"
+          pattern="^[A-Za-z0-9 ]{1,20}$"
+          title="Input no more than 20 letters, digits, and spaces"
+        />
+      </div>
+      <div class="form-section">
+        <label for="confirmation">Confirmation</label>
+        <button type="submit" class="submit-btn">Order</button>
+      </div>
+    </form>
+  </body>
+</html>
